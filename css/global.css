@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+}
+
+body {
+	font-size: 1rem;
+	letter-spacing: 0;
+	padding: 0;
+	font-family: 'Haval', 'Jura', sans-serif;
+	color: var(--white);
+	background-color: var(--white);
+}
+
+ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+}
+
+:root {
+	--white: #ffffff;
+	--black: #000000;
+	--mint: #00CABF;
+	--gray: #F3F3F3;
+	--silver:#E7E7E7;
+	--m6-gray: #A1A1A1;
+	--dargoX-red: #A13A21;
+	--dargoX-gray: #ADADAD;
+}
+
+.flex {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.grid {
+	display: grid;
+}
+
+.--just-space {
+	justify-content: space-between;
+}
+
+.--just-around {
+	justify-content: space-around;
+}
+
+.--just-even {
+	justify-content: space-evenly;
+}
+
+.--just-center {
+	justify-content: center;
+}
+
+.--just-end {
+	justify-content: flex-end;
+}
+
+.--align-str {
+	align-items: stretch;
+}
+
+.--align-center {
+	align-items: center;
+}
+
+.--align-end {
+	align-items: flex-end;
+}
+
+.--dir-col {
+	flex-direction: column;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.text--mint {
+	color: var(--mint);
+	font-weight: 500;
+}
+
+.text--black {
+	color: var(--black);
+}
+
+.hidden {
+	overflow: hidden;
+}

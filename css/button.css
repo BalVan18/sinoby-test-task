@@ -1,0 +1,119 @@
+.btn {
+  display: flex;
+  padding: 25px 23px 21px;
+  color: var(--white);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  text-transform: uppercase;
+  transition: all .3s;
+}
+
+.btn--mint {
+  background-color: var(--mint);
+}
+
+.btn--mint:hover {
+  filter: brightness(1.1);
+}
+
+.btn--mint:focus-visible,
+.btn--mint:active {
+  filter: brightness(1);
+}
+
+.btn--black {
+  background-color: var(--black);
+}
+
+.btn--black:hover {
+  color: var(--white);
+}
+
+.btn--black:focus-visible,
+.btn--black:active {
+  color: var(--mint);
+}
+
+.btn--empty {
+  color: var(--black);
+  background-color: transparent;
+  border: 1px solid var(--black);
+}
+
+.btn--empty:hover {
+  color: var(--white);
+  background-color: var(--mint);
+  border: 1px solid var(--mint);
+  filter: brightness(1.1);
+}
+
+.btn--empty:focus-visible,
+.btn--empty:active {
+  color: var(--white);
+  background-color: var(--mint);
+  border: 1px solid var(--mint);
+  filter: brightness(1);
+}
+
+.request-timer__btn {
+  width: 467px;
+}
+
+.card__btn {
+  width: 480px;
+  margin: 0 auto;
+}
+
+.card__btn:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.modal-form__btn {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1600px) {
+  .request-timer__btn {
+    width: 387px;
+  }
+}
+
+@media (max-width: 920px) {
+  .btn {
+    padding: 21px 13px 17px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 17px 13px 13px;
+    font-size: 12px;
+  }
+
+  .request-timer__btn {
+    width: unset;
+  }
+}
+
+@media (max-width: 576px) {
+  .card__btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn {
+    padding: 14px 13px 10px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .card__btn:not(:last-of-type) {
+    margin-bottom: 5px;
+  }
+}
