@@ -162,6 +162,10 @@
   transition: all .3s;
 }
 
+.header-bottom__wrap {
+  width: 100%;
+}
+
 .header-bottom__list {
   gap: 6px 14px;
 }
